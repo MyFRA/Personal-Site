@@ -1,0 +1,70 @@
+[
+    {
+        "thumbnail": "smk1rembang.png",
+        "logo": "logo-smk.png",
+        "name": "SMK N 1 Rembang School Website",
+        "description": "School website that provides information related to that school",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://smkn1rembang-pbg.sch.id/",
+        "github_link": null
+    },
+    {
+        "thumbnail": "kelulusan.png",
+        "logo": "logo-smk.png",
+        "name": "SMK N 1 Rembang School Graduation Website",
+        "description": "School Graduation website that provides information about Student Graduation",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "github_link": null
+    },
+    {
+        "thumbnail": "lsp.png",
+        "logo": "logo-smk.png",
+        "name": "LSP SMK N 1 Rembang",
+        "description": "LSP SMK N 1 Rembang with Admin Management, that provides information for Professional Certification Institute",
+        "tect_stacks": [
+            {
+                "type": "Monolith",
+                "stacks": ["laravel.jpg", "bootstrap.png"]
+            },
+            {
+                "type": "DB",
+                "stacks": ["mysql.png"]
+            }   
+        ],
+        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "github_link": null
+    },
+    {
+        "thumbnail": "salfood-landing-page.png",
+        "logo": "vue.png",
+        "name": "Salfood Landing Page",
+        "description": "Salfood Landing Page, I made this for study purposes which I do in my spare time",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["vue.png", "sass.png"]
+            }
+        ],
+        "demo_link": "https://salfood-myfra.netlify.app/",
+        "github_link": null
+    }
+]
