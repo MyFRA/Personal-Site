@@ -3,7 +3,7 @@
         "thumbnail": "smk1rembang.png",
         "logo": "logo-smk.png",
         "name": "SMK N 1 Rembang School Website",
-        "description": "School website with admin management that provides information related to that school",
+        "description": "School website that provides information related to that school",
         "tect_stacks": [
             {
                 "type": "Monolith",
@@ -71,7 +71,7 @@
         "thumbnail": "php-captcha-generator.png",
         "logo": "php.png",
         "name": "PHP Captcha Generator",
-        "description": "PHP Captcha Generator | is an package for generating Captcha using PHP",
+        "description": "PHP Captcha Generator Package",
         "tect_stacks": [
             {
                 "type": "BE",
@@ -85,7 +85,7 @@
         "thumbnail": "sikasep.png",
         "logo": "sikasep.jpg",
         "name": "SIKASEP | SISTEM INFORMASI KESEJAHTERAAN SOSIAL PANGANDARAN JUARA",
-        "description": "Website with admin management that provide and management data about Pangandaran regency residents",
+        "description": "Website that provide and management data about Pangandaran regency residents",
         "tect_stacks": [
             {
                 "type": "Monolith",
@@ -103,7 +103,7 @@
         "thumbnail": "ymi.png",
         "logo": "ymi.jpg",
         "name": "YMI | Yeong Mee International",
-        "description": "Ecommerce website management with selling management using MLM (Multilevel Marketing) method",
+        "description": "Ecommerce website with selling management using MLM (Multilevel Marketing) method",
         "tect_stacks": [
             {
                 "type": "Monolith",
@@ -136,7 +136,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "http://gg.matursoft.com/",
+        "demo_link": "https://ymimonoplan.com/",
         "github_link": null
     },
     {
@@ -169,7 +169,7 @@
         "tect_stacks": [
             {
                 "type": "Web",
-                "stacks": ["react.png", "bootstrap.png"]
+                "stacks": ["react.png"]
             },
             {
                 "type": "BE",
@@ -180,7 +180,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "https://absensi.bmtamanahindonesia.com/",
+        "demo_link": "https://play.google.com/store/apps/details?id=com.bmt.attendance",
         "github_link": null
     },
     {
@@ -191,7 +191,7 @@
         "tect_stacks": [
             {
                 "type": "FE",
-                "stacks": ["react.png", "bootstrap.png"]
+                "stacks": ["react.png"]
             },
             {
                 "type": "BE",
@@ -225,60 +225,6 @@
             }   
         ],
         "demo_link": null,
-        "github_link": null
-    },
-    {
-        "thumbnail": "farah-greeting.jpg",
-        "logo": "farah-greeting.png",
-        "name": "Farah Greeting",
-        "description": "An app or game with a birthday theme that I made specifically for a girl I like as a birthday gift",
-        "tect_stacks": [
-            {
-                "type": "Mobile",
-                "stacks": ["rn.png"]
-            }
-        ],
-        "demo_link": "https://drive.google.com/file/d/1MMHS45TzYmxGa-ZPhHEg5dm9tRPL6YWA/view?usp=sharing",
-        "github_link": null
-    },
-    {
-        "thumbnail": "kitani.png",
-        "logo": "farah-greeting.png",
-        "name": "KITANI (Backend System)",
-        "description": "Develop KITANI Backend system for mobile & admin dashboard app. KITANI is an app that used by farmers to plant in a more modern way",
-        "tect_stacks": [
-            {
-                "type": "BE",
-                "stacks": ["laravel.jpg"]
-            },
-            {
-                "type": "DB",
-                "stacks": ["postgresql.svg"]
-            }
-        ],
-        "demo_link": "https://play.google.com/store/apps/details?id=com.kitanifarmerapp",
-        "github_link": null
-    },
-    {
-        "thumbnail": "kelulusan-skansar.jpg",
-        "logo": "logo-smk.png",
-        "name": "Kelulusan Skansar",
-        "description": "School Graduation application that provides information about Student Graduation",
-        "tect_stacks": [
-            {
-                "type": "Mobile",
-                "stacks": ["kotlin.png"]
-            },
-            {
-                "type": "BE",
-                "stacks": ["laravel.jpg"]
-            },
-            {
-                "type": "DB",
-                "stacks": ["mysql.png"]
-            }
-        ],
-        "demo_link": "https://drive.google.com/file/d/14z1SXK20jwc4gib0PDen9tmYtKsmAl_T/view?usp=sharing",
         "github_link": null
     }
 ]

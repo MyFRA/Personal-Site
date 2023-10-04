@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import LinkIcon from 'remixicon-react/LinkIcon';
 import Axios from '../libs/axios';
+import GithubFillIcon from 'remixicon-react/GithubFillIcon';
 
 interface TechStackInterface {
-    type: 'BE' | 'FE' | 'DB' | 'Monolith',
+    type: 'BE' | 'FE' | 'DB' | 'Monolith' | 'Mobile',
     stacks: Array<string>
 }
 
@@ -13,7 +14,7 @@ interface PortofolioInterface {
     name: string,
     description: string,
     tect_stacks: Array<TechStackInterface>,
-    demo_link: string,
+    demo_link?: string,
     github_link?: string
 }
 
@@ -39,7 +40,7 @@ export default function PortofolioComponent() {
                             <div className="h-full shadow-lg" style={{ borderRadius: '10px' }}>
                                 <div className='flex flex-col justify-between h-full'>
                                     <div>
-                                        <img src={`./assets/images/portofolios/${portofolio.thumbnail}`} className="w-full h-48 object-cover object-center"
+                                        <img src={`./assets/images/portofolios/${portofolio.thumbnail}`} className={`h-48 ${portofolio.name != 'BOTOT' && portofolio.name != 'Kelulusan Skansar' ? 'w-full object-cover object-center' : 'mx-auto'}`}
                                             style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                                             alt={portofolio.name} />
                                         <hr />
@@ -74,10 +75,19 @@ export default function PortofolioComponent() {
                                                     }
                                                 </table>
                                             </div>
-                                            <div>
-                                                <a href={portofolio.demo_link} target='_blank'>
-                                                    <LinkIcon size={25} />
-                                                </a>
+                                            <div className='flex items-center gap-x-2'>
+                                                {
+                                                    portofolio.github_link ?
+                                                        <a href={portofolio.github_link} target='_blank'>
+                                                            <GithubFillIcon size={25} className='text-gray-700 hover:text-pink-600' />
+                                                        </a> : <></>
+                                                }
+                                                {
+                                                    portofolio.demo_link ?
+                                                        <a href={portofolio.demo_link} target='_blank'>
+                                                            <LinkIcon size={25} className='text-gray-700 hover:text-pink-600' />
+                                                        </a> : <></>
+                                                }
                                             </div>
                                         </div>
                                     </div>
