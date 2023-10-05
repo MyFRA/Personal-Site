@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Bootstrap",
+        "logo": "bootstrap.png"
+    },
+    {
+        "name": "Tailwind",
+        "logo": "tailwind.svg"
+    },
+    {
+        "name": "Codeigniter",
+        "logo": "codeigniter.svg"
+    },
+    {
+        "name": "Laravel",
+        "logo": "laravel.jpg"
+    },
+    {
+        "name": "React JS",
+        "logo": "react.png"
+    },
+    {
+        "name": "React Native",
+        "logo": "rn.webp"
+    },
+    {
+        "name": "ExpressJS",
+        "logo": "expressjs.png"
+    },
+    {
+        "name": "Nest JS",
+        "logo": "nest.svg"
+    }
+]

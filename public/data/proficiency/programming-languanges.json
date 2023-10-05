@@ -1,46 +1,34 @@
 [
     {
-        "name": "PHP",
-        "logo": "php.png"
+        "name": "HTML",
+        "logo": "html.png"
+    },
+    {
+        "name": "CSS",
+        "logo": "css.png"
+    },
+    {
+        "name": "Javascript",
+        "logo": "js.png"
     },
     {
         "name": "PHP",
         "logo": "php.png"
     },
     {
-        "name": "PHP",
-        "logo": "php.png"
+        "name": "Kotlin",
+        "logo": "kotlin.png"
     },
     {
-        "name": "PHP",
-        "logo": "php.png"
+        "name": "SASS",
+        "logo": "sass.png"
     },
     {
-        "name": "PHP",
-        "logo": "php.png"
+        "name": "NodeJS",
+        "logo": "node-js.png"
     },
     {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
-    },
-    {
-        "name": "PHP",
-        "logo": "php.png"
+        "name": "Typescript",
+        "logo": "ts.svg"
     }
 ]

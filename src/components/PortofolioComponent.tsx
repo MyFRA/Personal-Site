@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import LinkIcon from 'remixicon-react/LinkIcon';
 import Axios from '../libs/axios';
 import GithubFillIcon from 'remixicon-react/GithubFillIcon';
+import Viewer from "react-viewer";
 
 interface TechStackInterface {
     type: 'BE' | 'FE' | 'DB' | 'Monolith' | 'Mobile',
@@ -20,7 +21,12 @@ interface PortofolioInterface {
 
 export default function PortofolioComponent() {
 
+    const [visible, setVisible] = useState(false);
     const [portofolios, setPortofolios] = useState<Array<PortofolioInterface>>([])
+    const [portofolioModal, setPortofolioModal] = useState<PortofolioInterface | { thumbnail: '', name: '' }>({
+        thumbnail: '',
+        name: ''
+    })
 
     useEffect(() => {
         Axios.get('/data/portofolios.json')
@@ -30,24 +36,39 @@ export default function PortofolioComponent() {
 
     }, [])
 
+    const openModalViewerImage = (gallery: PortofolioInterface) => {
+        setPortofolioModal(gallery)
+        setVisible(true)
+    }
+
     return (
         <section className="px-6 lg:px-48 pt-12" id="portofolio">
+            {/* Modal Viewer */}
+            <Viewer
+                visible={visible}
+                onClose={() => { setVisible(false); }}
+                images={[{ src: `./assets/images/portofolios/${portofolioModal.thumbnail}`, alt: portofolioModal.name }]}
+            />
+            {/* End of Modal Viewer */}
+
             <h2 className="text-left text-pink-600 font-lexend text-3xl font-semibold">Portofolio</h2>
             <div className="mt-2 -mx-5 flex items-stretch flex-wrap justify-start">
                 {
                     portofolios.map((portofolio) => (
-                        <div className='w-12/12 lg:w-3/12 px-5 py-5'>
+                        <div className='w-full lg:w-3/12 px-5 py-5'>
                             <div className="h-full shadow-lg" style={{ borderRadius: '10px' }}>
                                 <div className='flex flex-col justify-between h-full'>
                                     <div>
-                                        <img src={`./assets/images/portofolios/${portofolio.thumbnail}`} className={`h-48 ${portofolio.name != 'BOTOT' && portofolio.name != 'Kelulusan Skansar' ? 'w-full object-cover object-center' : 'mx-auto'}`}
+                                        <img onClick={() => {
+                                            openModalViewerImage(portofolio)
+                                        }} src={`./assets/images/portofolios/${portofolio.thumbnail}`} className={`cursor-pointer h-48 ${portofolio.name != 'BOTOT' && portofolio.name != 'Kelulusan Skansar' ? 'w-full object-cover object-center' : 'mx-auto'}`}
                                             style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                                             alt={portofolio.name} />
                                         <hr />
                                         <div className="px-6 pt-4 flex flex-col justify-between ">
-                                            <div className="flex items-center gap-x-2">
+                                            <div className="flex items-center gap-x-3">
                                                 <img className="w-8" src={`./assets/images/portofolio-logos/${portofolio.logo}`} alt={portofolio.name} />
-                                                <h3 className="font-semibold font-open-sans text-sm">{portofolio.name}</h3>
+                                                <h3 className="font-semibold font-inter text-sm">{portofolio.name}</h3>
                                             </div>
                                             <p className="mt-5 text-gray-600 text-sm font-inter">{portofolio.description}</p>
                                         </div>

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "MySQL",
+        "logo": "mysql.png"
+    },
+    {
+        "name": "MariaDB",
+        "logo": "mariadb.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "logo": "postgresql.svg"
+    }
+]

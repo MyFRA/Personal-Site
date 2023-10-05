@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Apache",
+        "logo": "apache.png"
+    },
+    {
+        "name": "NGINX",
+        "logo": "nginx.svg"
+    }
+]

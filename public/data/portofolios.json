@@ -50,7 +50,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "demo_link": null,
         "github_link": null
     },
     {
@@ -71,7 +71,7 @@
         "thumbnail": "php-captcha-generator.png",
         "logo": "php.png",
         "name": "PHP Captcha Generator",
-        "description": "PHP Captcha Generator | is an package for generating Captcha using PHP",
+        "description": "PHP Captcha Generator | is a package for generating Captcha using PHP",
         "tect_stacks": [
             {
                 "type": "BE",
@@ -147,7 +147,7 @@
         "tect_stacks": [
             {
                 "type": "Mobile",
-                "stacks": ["rn.png"]
+                "stacks": ["rn.webp"]
             },
             {
                 "type": "BE",
@@ -168,7 +168,7 @@
         "description": "Web App BMT Absensi, is an attendance website that used by BMT Company Administrator (to monitoring data employees attendance)",
         "tect_stacks": [
             {
-                "type": "Web",
+                "type": "FE",
                 "stacks": ["react.png", "bootstrap.png"]
             },
             {
@@ -235,7 +235,7 @@
         "tect_stacks": [
             {
                 "type": "Mobile",
-                "stacks": ["rn.png"]
+                "stacks": ["rn.webp"]
             }
         ],
         "demo_link": "https://drive.google.com/file/d/1MMHS45TzYmxGa-ZPhHEg5dm9tRPL6YWA/view?usp=sharing",
@@ -243,7 +243,7 @@
     },
     {
         "thumbnail": "kitani.png",
-        "logo": "farah-greeting.png",
+        "logo": "kitani.png",
         "name": "KITANI (Backend System)",
         "description": "Develop KITANI Backend system for mobile & admin dashboard app. KITANI is an app that used by farmers to plant in a more modern way",
         "tect_stacks": [
@@ -280,5 +280,19 @@
         ],
         "demo_link": "https://drive.google.com/file/d/14z1SXK20jwc4gib0PDen9tmYtKsmAl_T/view?usp=sharing",
         "github_link": null
+    },
+    {
+        "thumbnail": "personal-site.png",
+        "logo": "sakura.png",
+        "name": "Personal Site",
+        "description": "My Personal Site :)",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["react.png", "tailwind.svg"]
+            }
+        ],
+        "demo_link": "https://myfra.github.io",
+        "github_link": "https://github.com/MyFRA/personal-site"
     }
 ]
