@@ -43,6 +43,7 @@ export default function NavComponent() {
                     <li className="text-gray-600 hover:text-pink-600 font-inter relative"><a href="#contacts" onClick={(e) => {
                         setActiveNav(e.target)
                     }}>Contacts</a></li>
+                    <li className="text-gray-600 hover:text-pink-600 font-inter relative"><a href="https://medium.com/@myfra" target="_blank">Blogs</a></li>
                 </ul>
             </div>
             <div className="w-2/12"></div>
