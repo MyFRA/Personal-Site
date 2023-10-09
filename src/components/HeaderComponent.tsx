@@ -2,6 +2,7 @@ import AtLineIcon from 'remixicon-react/AtLineIcon';
 import GithubFillIcon from 'remixicon-react/GithubFillIcon';
 import LinkedinFillIcon from 'remixicon-react/LinkedinFillIcon';
 import WhatsappFillIcon from 'remixicon-react/WhatsappFillIcon';
+import AudioPlayerElement from './AudioPlayerElement';
 
 export default function HeaderComponent() {
     return (
@@ -26,6 +27,7 @@ export default function HeaderComponent() {
                         </a>
                     </div>
                     <a href="./data/CV_Tomy Wibowo.pdf" target='_blank' className='mt-4 font-inter bg-pink-600 hover:bg-pink-400 text-white rounded-md px-6 py-1.5 text-sm'>Download CV</a>
+                    <AudioPlayerElement />
                 </div>
             </div>
         </div>
