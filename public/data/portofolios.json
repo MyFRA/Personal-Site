@@ -294,5 +294,19 @@
         ],
         "demo_link": "https://myfra.github.io",
         "github_link": "https://github.com/MyFRA/personal-site"
+    },
+    {
+        "thumbnail": "atika.png",
+        "logo": "atika.svg",
+        "name": "Atika Tailwind CSS Admin Dashboard",
+        "description": "Free and Open-source Tailwind CSS Dashboard Admin Template",
+        "tect_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["astro.png", "tailwind.svg"]
+            }
+        ],
+        "demo_link": "https://atika-dashboard.vercel.app",
+        "github_link": "https://github.com/MyFRA/Atika"
     }
 ]
