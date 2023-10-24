@@ -101,7 +101,7 @@
     },
     {
         "thumbnail": "ymi.png",
-        "logo": "ymi.jpg",
+        "logo": "ymi.jpeg",
         "name": "YMI | Yeong Mee International",
         "description": "Ecommerce website with selling management using MLM (Multilevel Marketing) method",
         "tect_stacks": [
@@ -118,8 +118,8 @@
         "github_link": null
     },
     {
-        "thumbnail": "gg.png",
-        "logo": "gg.png",
+        "thumbnail": "gg.jpeg",
+        "logo": "gg.jpeg",
         "name": "GG | Garuda Gold",
         "description": "Website with admin dashboard that used to management about selling product & generate QR with verification",
         "tect_stacks": [
@@ -140,8 +140,8 @@
         "github_link": null
     },
     {
-        "thumbnail": "bmt.png",
-        "logo": "bmt.png",
+        "thumbnail": "bmt.jpeg",
+        "logo": "bmt.jpeg",
         "name": "BMT Absensi | (Mobile App)",
         "description": "Mobile App BMT Absensi, is an attendance app that used by BMT Company Employee (to doing attendance)",
         "tect_stacks": [
@@ -163,7 +163,7 @@
     },
     {
         "thumbnail": "bmt-web.png",
-        "logo": "bmt.png",
+        "logo": "bmt.jpeg",
         "name": "BMT Absensi | (Web App)",
         "description": "Web App BMT Absensi, is an attendance website that used by BMT Company Administrator (to monitoring data employees attendance)",
         "tect_stacks": [
@@ -184,7 +184,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "ut-survei.png",
+        "thumbnail": "ut-survei.jpeg",
         "logo": "logo-ut.png",
         "name": "SISUSAN | Decision Survey System (Universitas Terbuka)",
         "description": "SISUSAN | Decision Survey System, is an app that used by Universitas Terbuka Purwokerto for making decision survey system",

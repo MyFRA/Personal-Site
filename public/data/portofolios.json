@@ -1,6 +1,6 @@
 [
     {
-        "thumbnail": "smk1rembang.png",
+        "thumbnail": "smk1rembang.jpeg",
         "logo": "logo-smk.png",
         "name": "SMK N 1 Rembang School Website",
         "description": "School website with admin management that provides information related to that school",
@@ -36,7 +36,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "lsp.png",
+        "thumbnail": "lsp.jpeg",
         "logo": "logo-smk.png",
         "name": "LSP SMK N 1 Rembang",
         "description": "LSP SMK N 1 Rembang with Admin Management, that provides information for Professional Certification Institute",
@@ -54,7 +54,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "salfood-landing-page.png",
+        "thumbnail": "salfood-landing-page.jpeg",
         "logo": "vue.png",
         "name": "Salfood Landing Page",
         "description": "Salfood Landing Page, I made this for study purposes which I do in my spare time",
@@ -82,7 +82,7 @@
         "github_link": "https://github.com/MyFRA/php-captcha-generator"
     },
     {
-        "thumbnail": "sikasep.png",
+        "thumbnail": "sikasep.jpeg",
         "logo": "sikasep.jpg",
         "name": "SIKASEP | SISTEM INFORMASI KESEJAHTERAAN SOSIAL PANGANDARAN JUARA",
         "description": "Website with admin management that provide and management data about Pangandaran regency residents",
@@ -101,7 +101,7 @@
     },
     {
         "thumbnail": "ymi.png",
-        "logo": "ymi.jpg",
+        "logo": "ymi.jpeg",
         "name": "YMI | Yeong Mee International",
         "description": "Ecommerce website management with selling management using MLM (Multilevel Marketing) method",
         "tect_stacks": [
@@ -118,7 +118,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "gg.png",
+        "thumbnail": "gg.jpeg",
         "logo": "gg.png",
         "name": "GG | Garuda Gold",
         "description": "Website with admin dashboard that used to management about selling product & generate QR with verification",
@@ -140,7 +140,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "bmt.png",
+        "thumbnail": "bmt.jpeg",
         "logo": "bmt.png",
         "name": "BMT Absensi | (Mobile App)",
         "description": "Mobile App BMT Absensi, is an attendance app that used by BMT Company Employee (to doing attendance)",
@@ -184,7 +184,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "ut-survei.png",
+        "thumbnail": "ut-survei.jpeg",
         "logo": "logo-ut.png",
         "name": "SISUSAN | Decision Survey System (Universitas Terbuka)",
         "description": "SISUSAN | Decision Survey System, is an app that used by Universitas Terbuka Purwokerto for making decision survey system",
@@ -228,7 +228,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "farah-greeting.jpg",
+        "thumbnail": "farah-greeting.jpeg",
         "logo": "farah-greeting.png",
         "name": "Farah Greeting",
         "description": "An app or game with a birthday theme that I made specifically for a girl I like as a birthday gift",
@@ -242,7 +242,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "kitani.png",
+        "thumbnail": "kitani.jpeg",
         "logo": "kitani.png",
         "name": "KITANI (Backend System)",
         "description": "Develop KITANI Backend system for mobile & admin dashboard app. KITANI is an app that used by farmers to plant in a more modern way",
@@ -282,7 +282,7 @@
         "github_link": null
     },
     {
-        "thumbnail": "personal-site.png",
+        "thumbnail": "personal-site.jpeg",
         "logo": "sakura.png",
         "name": "Personal Site",
         "description": "My Personal Site :)",

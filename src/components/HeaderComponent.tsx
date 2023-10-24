@@ -6,7 +6,7 @@ import AudioPlayerElement from './AudioPlayerElement';
 
 export default function HeaderComponent() {
     return (
-        <div style={{ backgroundImage: `url(${`./assets/images/backgrounds/bg-batik.png`})` }}>
+        <div style={{ backgroundImage: `url(${`./assets/images/backgrounds/bg-batik.jpeg`})` }}>
             <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }} className="flex justify-center py-10">
                 <div className="flex flex-col items-center px-8 lg:px-0">
                     <img src={'./assets/images/avatars/sakura.png'} alt="profile-picture" className="w-28 lg:w-40" />
