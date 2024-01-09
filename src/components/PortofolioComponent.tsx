@@ -3,7 +3,7 @@ import LinkIcon from 'remixicon-react/LinkIcon';
 import Axios from '../libs/axios';
 import GithubFillIcon from 'remixicon-react/GithubFillIcon';
 import Viewer from "react-viewer";
-import ContentLoader, { Facebook } from 'react-content-loader'
+import ContentLoader from 'react-content-loader'
 
 interface TechStackInterface {
     type: 'BE' | 'FE' | 'DB' | 'Monolith' | 'Mobile',
@@ -39,7 +39,7 @@ export default function PortofolioComponent() {
                     console.log(e)
                     e.tech_stacks.map((techStack) => {
                         const imageLoaded: Array<boolean> = []
-                        techStack.stacks.forEach((stack) => {
+                        techStack.stacks.forEach(() => {
                             imageLoaded.push(false)
                         })
 
