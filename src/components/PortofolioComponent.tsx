@@ -3,10 +3,12 @@ import LinkIcon from 'remixicon-react/LinkIcon';
 import Axios from '../libs/axios';
 import GithubFillIcon from 'remixicon-react/GithubFillIcon';
 import Viewer from "react-viewer";
+import ContentLoader, { Facebook } from 'react-content-loader'
 
 interface TechStackInterface {
     type: 'BE' | 'FE' | 'DB' | 'Monolith' | 'Mobile',
-    stacks: Array<string>
+    stacks: Array<string>,
+    imageLoaded: Array<boolean>
 }
 
 interface PortofolioInterface {
@@ -14,9 +16,10 @@ interface PortofolioInterface {
     logo: string,
     name: string,
     description: string,
-    tect_stacks: Array<TechStackInterface>,
+    tech_stacks: Array<TechStackInterface>,
     demo_link?: string,
-    github_link?: string
+    github_link?: string,
+    thumbnail_loaded?: boolean
 }
 
 export default function PortofolioComponent() {
@@ -31,14 +34,62 @@ export default function PortofolioComponent() {
     useEffect(() => {
         Axios.get('/data/portofolios.json')
             .then((res) => {
-                setPortofolios(res.data)
+                setPortofolios(res.data.map((e: PortofolioInterface) => {
+                    e.thumbnail_loaded = false
+                    console.log(e)
+                    e.tech_stacks.map((techStack) => {
+                        const imageLoaded: Array<boolean> = []
+                        techStack.stacks.forEach((stack) => {
+                            imageLoaded.push(false)
+                        })
+
+                        techStack.imageLoaded = imageLoaded
+
+                        return techStack
+                    })
+                    return e
+                }))
             })
 
     }, [])
 
+    useEffect(() => {
+        console.log(portofolios)
+    }, [portofolios])
+
     const openModalViewerImage = (gallery: PortofolioInterface) => {
         setPortofolioModal(gallery)
         setVisible(true)
+    }
+
+    const onloadPortofolioThumbnail = (portofolio: PortofolioInterface) => {
+        setPortofolios([...portofolios].map((e: PortofolioInterface) => {
+            if (e == portofolio) {
+                e.thumbnail_loaded = true
+                return e
+            } else {
+                return e;
+            }
+        }))
+    }
+
+    const onloadImageTechStack = (techStack: TechStackInterface, stack: string) => {
+        setPortofolios([...portofolios].map((e: PortofolioInterface) => {
+            e.tech_stacks.map((techStackData) => {
+                if (techStack === techStackData) {
+                    techStackData.stacks.map((stackName: string, index: number) => {
+                        if (stackName == stack && !techStack.imageLoaded[index]) {
+                            techStackData.imageLoaded[index] = true
+                        }
+
+                        return stackName
+                    })
+                }
+                return techStackData
+            })
+
+            return e;
+        }))
     }
 
     return (
@@ -59,9 +110,16 @@ export default function PortofolioComponent() {
                             <div className="h-full shadow-lg" style={{ borderRadius: '10px' }}>
                                 <div className='flex flex-col justify-between h-full'>
                                     <div>
+                                        {
+                                            !portofolio.thumbnail_loaded ? <ContentLoader viewBox="0 0 380 250">
+                                                <rect x="0" y="0" rx="5" ry="5" width="100%" height="250" />
+                                            </ContentLoader> : <></>
+                                        }
                                         <img onClick={() => {
                                             openModalViewerImage(portofolio)
-                                        }} src={`./assets/images/portofolios/${portofolio.thumbnail}`} className={`cursor-pointer h-48 ${portofolio.name != 'BOTOT' && portofolio.name != 'Kelulusan Skansar' ? 'w-full object-cover object-center' : 'mx-auto'}`}
+                                        }} src={`./assets/images/portofolios/${portofolio.thumbnail}`} onLoad={() => {
+                                            onloadPortofolioThumbnail(portofolio)
+                                        }} className={`cursor-pointer ${portofolio.thumbnail_loaded ? 'h-48' : 'h-0'} ${portofolio.name != 'BOTOT' && portofolio.name != 'Kelulusan Skansar' ? 'w-full object-cover object-center' : 'mx-auto'}`}
                                             style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                                             alt={portofolio.name} />
                                         <hr />
@@ -78,15 +136,25 @@ export default function PortofolioComponent() {
                                             <div className="flex items-center gap-x-2">
                                                 <table>
                                                     {
-                                                        portofolio.tect_stacks.map((techStack) => (
+                                                        portofolio.tech_stacks.map((techStack) => (
                                                             <tr>
                                                                 <td className='pt-2 font-semibold font-inter text-gray-600 text-sm'>{techStack.type}</td>
                                                                 <td className='pt-2 px-2 text-sm'>:</td>
                                                                 <td>
                                                                     <div className='pt-2 flex items-center gap-x-2'>
                                                                         {
-                                                                            techStack.stacks.map((stack) => (
-                                                                                <img src={`./assets/images/stacks/${stack}`} className="w-7 rounded-lg" alt={stack} />
+                                                                            techStack.stacks.map((stack, stackIndex) => (
+                                                                                <div>
+                                                                                    {
+                                                                                        techStack.imageLoaded[stackIndex] === false ? <ContentLoader width={40} height={40}>
+                                                                                            <circle cx="15" cy="19" r="15" />
+                                                                                        </ContentLoader> : <></>
+                                                                                    }
+                                                                                    <img src={`./assets/images/stacks/${stack}`} onLoad={() => {
+                                                                                        onloadImageTechStack(techStack, stack)
+                                                                                    }} className={`${techStack.imageLoaded[stackIndex] === true ? 'w-7' : 'w-0'} rounded-lg`} alt={stack} />
+                                                                                </div>
+
                                                                             ))
                                                                         }
                                                                     </div>

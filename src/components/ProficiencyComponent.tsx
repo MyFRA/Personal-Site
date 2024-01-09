@@ -1,29 +1,35 @@
 import { useEffect, useState } from "react"
 import Axios from "../libs/axios"
+import ContentLoader from "react-content-loader"
 
 interface ProgrammingLanguangeInterface {
     name: string,
-    logo: string
+    logo: string,
+    isLoaded: boolean
 }
 
 interface FrameworkInterface {
     name: string,
-    logo: string
+    logo: string,
+    isLoaded: boolean
 }
 
 interface DatabaseInterface {
     name: string,
-    logo: string
+    logo: string,
+    isLoaded: boolean
 }
 
 interface WebServerInterface {
     name: string,
-    logo: string
+    logo: string,
+    isLoaded: boolean
 }
 
 interface LanguangeInterface {
     name: string,
-    logo: string
+    logo: string,
+    isLoaded: boolean
 }
 
 export default function () {
@@ -45,35 +51,55 @@ export default function () {
     const loadProgrammingLanguanges = (): void => {
         Axios.get('./data/proficiency/programming-languanges.json')
             .then((res) => {
-                setProgrammingLanguanges(res.data)
+                setProgrammingLanguanges(res.data.map((e: ProgrammingLanguangeInterface) => {
+                    e.isLoaded = false;
+
+                    return e
+                }))
             })
     }
 
     const loadFrameworks = (): void => {
         Axios.get('./data/proficiency/frameworks.json')
             .then((res) => {
-                setFrameworks(res.data)
+                setFrameworks(res.data.map((e: FrameworkInterface) => {
+                    e.isLoaded = false
+
+                    return e
+                }))
             })
     }
 
     const loadDatabases = (): void => {
         Axios.get('./data/proficiency/databases.json')
             .then((res) => {
-                setDatabases(res.data)
+                setDatabases(res.data.map((e: DatabaseInterface) => {
+                    e.isLoaded = false
+
+                    return e
+                }))
             })
     }
 
     const loadWebServers = (): void => {
         Axios.get('./data/proficiency/web-servers.json')
             .then((res) => {
-                setWebServers(res.data)
+                setWebServers(res.data.map((e: WebServerInterface) => {
+                    e.isLoaded = false
+
+                    return e
+                }))
             })
     }
 
     const loadLanguanges = (): void => {
         Axios.get('./data/proficiency/languanges.json')
             .then((res) => {
-                setLanguanges(res.data)
+                setLanguanges(res.data.map((e: LanguangeInterface) => {
+                    e.isLoaded = false
+
+                    return e
+                }))
             })
     }
 
@@ -89,7 +115,21 @@ export default function () {
                         programmingLanguanges.map((programmingLanguange) => (
                             <div className="mt-4 lg:mt-0 w-12/12 lg:w-2/12 px-4">
                                 <div className="rounded-xl py-6 bg-pink-50 flex flex-col items-center">
-                                    <img src={`./assets/images/stacks/${programmingLanguange.logo}`} alt={programmingLanguange.name} className="w-16" />
+                                    {
+                                        !programmingLanguange.isLoaded ?
+                                            <ContentLoader width={60} height={60}>
+                                                <circle cx="30" cy="30" r="30" />
+                                            </ContentLoader> : <></>
+                                    }
+                                    <img src={`./assets/images/stacks/${programmingLanguange.logo}`} alt={programmingLanguange.name} onLoad={() => {
+                                        setProgrammingLanguanges([...programmingLanguanges].map((e) => {
+                                            if (e == programmingLanguange) {
+                                                e.isLoaded = true
+                                            }
+
+                                            return e
+                                        }))
+                                    }} className={`${programmingLanguange.isLoaded ? 'w-16' : 'w-0'}`} />
                                     <h4 className="mt-3 text-gray-700 font-inter">{programmingLanguange.name}</h4>
                                 </div>
                             </div>
@@ -107,7 +147,21 @@ export default function () {
                         frameworks.map((framework) => (
                             <div className="mt-4 lg:mt-0 w-12/12 lg:w-2/12 px-4">
                                 <div className="rounded-xl py-6 bg-pink-50 flex flex-col items-center">
-                                    <img src={`./assets/images/stacks/${framework.logo}`} alt={framework.name} className="w-16 rounded-lg" />
+                                    {
+                                        !framework.isLoaded ?
+                                            <ContentLoader width={60} height={60}>
+                                                <circle cx="30" cy="30" r="30" />
+                                            </ContentLoader> : <></>
+                                    }
+                                    <img src={`./assets/images/stacks/${framework.logo}`} alt={framework.name} className={`${framework.isLoaded ? 'w-16' : 'w-0'} rounded-lg`} onLoad={() => {
+                                        setFrameworks([...frameworks].map((e) => {
+                                            if (e == framework) {
+                                                e.isLoaded = true
+                                            }
+
+                                            return e
+                                        }))
+                                    }} />
                                     <h4 className="mt-3 text-gray-700 font-inter">{framework.name}</h4>
                                 </div>
                             </div>
@@ -125,7 +179,21 @@ export default function () {
                         databases.map((database) => (
                             <div className="mt-4 lg:mt-0 w-12/12 lg:w-2/12 px-4">
                                 <div className="rounded-xl py-6 bg-pink-50 flex flex-col items-center">
-                                    <img src={`./assets/images/stacks/${database.logo}`} alt={database.name} className="w-16 rounded-lg" />
+                                    {
+                                        !database.isLoaded ?
+                                            <ContentLoader width={60} height={60}>
+                                                <circle cx="30" cy="30" r="30" />
+                                            </ContentLoader> : <></>
+                                    }
+                                    <img src={`./assets/images/stacks/${database.logo}`} alt={database.name} onLoad={() => {
+                                        setDatabases([...databases].map((e) => {
+                                            if (e == database) {
+                                                e.isLoaded = true
+                                            }
+
+                                            return e
+                                        }))
+                                    }} className="w-16 rounded-lg" />
                                     <h4 className="mt-3 text-gray-700 font-inter">{database.name}</h4>
                                 </div>
                             </div>
@@ -143,7 +211,21 @@ export default function () {
                         webServers.map((webServer) => (
                             <div className="mt-4 lg:mt-0 w-12/12 lg:w-2/12 px-4">
                                 <div className="rounded-xl py-6 bg-pink-50 flex flex-col items-center">
-                                    <img src={`./assets/images/stacks/${webServer.logo}`} alt={webServer.name} className="w-16" />
+                                    {
+                                        !webServer.isLoaded ?
+                                            <ContentLoader width={60} height={60}>
+                                                <circle cx="30" cy="30" r="30" />
+                                            </ContentLoader> : <></>
+                                    }
+                                    <img src={`./assets/images/stacks/${webServer.logo}`} alt={webServer.name} onLoad={() => {
+                                        setWebServers([...webServers].map((e) => {
+                                            if (e == webServer) {
+                                                e.isLoaded = true
+                                            }
+
+                                            return e
+                                        }))
+                                    }} className="w-16" />
                                     <h4 className="mt-3 text-gray-700 font-inter">{webServer.name}</h4>
                                 </div>
                             </div>
@@ -161,7 +243,21 @@ export default function () {
                         languanges.map((languange) => (
                             <div className="mt-4 lg:mt-0 w-12/12 lg:w-2/12 px-4">
                                 <div className="rounded-xl py-6 bg-pink-50 flex flex-col items-center">
-                                    <img src={`./assets/images/stacks/${languange.logo}`} alt={languange.name} className="w-16" />
+                                    {
+                                        !languange.isLoaded ?
+                                            <ContentLoader width={60} height={60}>
+                                                <circle cx="30" cy="30" r="30" />
+                                            </ContentLoader> : <></>
+                                    }
+                                    <img src={`./assets/images/stacks/${languange.logo}`} alt={languange.name} onLoad={() => {
+                                        setLanguanges([...languanges].map((e) => {
+                                            if (e == languange) {
+                                                e.isLoaded = true
+                                            }
+
+                                            return e
+                                        }))
+                                    }} className="w-16" />
                                     <h4 className="mt-3 text-gray-700 font-inter">{languange.name}</h4>
                                 </div>
                             </div>

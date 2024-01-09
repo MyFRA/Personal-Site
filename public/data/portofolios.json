@@ -4,7 +4,7 @@
         "logo": "logo-smk.png",
         "name": "SMK N 1 Rembang School Website",
         "description": "School website with admin management that provides information related to that school",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Monolith",
                 "stacks": ["laravel.jpg", "bootstrap.png"]
@@ -22,7 +22,7 @@
         "logo": "logo-smk.png",
         "name": "SMK N 1 Rembang School Graduation Website",
         "description": "School Graduation website that provides information about Student Graduation",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Monolith",
                 "stacks": ["laravel.jpg", "bootstrap.png"]
@@ -32,7 +32,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "https://kelulusan-smk-rembang.matursoft.com",
+        "demo_link": null,
         "github_link": null
     },
     {
@@ -40,7 +40,7 @@
         "logo": "logo-smk.png",
         "name": "LSP SMK N 1 Rembang",
         "description": "LSP SMK N 1 Rembang with Admin Management, that provides information for Professional Certification Institute",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Monolith",
                 "stacks": ["laravel.jpg", "bootstrap.png"]
@@ -58,7 +58,7 @@
         "logo": "vue.png",
         "name": "Salfood Landing Page",
         "description": "Salfood Landing Page, I made this for study purposes which I do in my spare time",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["vue.png", "sass.png"]
@@ -72,13 +72,13 @@
         "logo": "php.png",
         "name": "PHP Captcha Generator",
         "description": "PHP Captcha Generator | is a package for generating Captcha using PHP",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "BE",
                 "stacks": ["php.png"]
             }
         ],
-        "demo_link": "https://php-captcha-generator.matursoft.com",
+        "demo_link": null,
         "github_link": "https://github.com/MyFRA/php-captcha-generator"
     },
     {
@@ -86,7 +86,7 @@
         "logo": "sikasep.jpg",
         "name": "SIKASEP | SISTEM INFORMASI KESEJAHTERAAN SOSIAL PANGANDARAN JUARA",
         "description": "Website with admin management that provide and management data about Pangandaran regency residents",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Monolith",
                 "stacks": ["laravel.jpg", "bootstrap.png"]
@@ -104,7 +104,7 @@
         "logo": "ymi.jpeg",
         "name": "YMI | Yeong Mee International",
         "description": "Ecommerce website management with selling management using MLM (Multilevel Marketing) method",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Monolith",
                 "stacks": ["laravel.jpg", "bootstrap.png"]
@@ -114,7 +114,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "https://ymimonoplan.com/",
+        "demo_link": null,
         "github_link": null
     },
     {
@@ -122,7 +122,7 @@
         "logo": "gg.png",
         "name": "GG | Garuda Gold",
         "description": "Website with admin dashboard that used to management about selling product & generate QR with verification",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["laravel.jpg", "react.png", "bootstrap.png"]
@@ -136,7 +136,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "http://gg.matursoft.com/",
+        "demo_link": null,
         "github_link": null
     },
     {
@@ -144,7 +144,7 @@
         "logo": "bmt.png",
         "name": "BMT Absensi | (Mobile App)",
         "description": "Mobile App BMT Absensi, is an attendance app that used by BMT Company Employee (to doing attendance)",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Mobile",
                 "stacks": ["rn.webp"]
@@ -166,7 +166,7 @@
         "logo": "bmt.png",
         "name": "BMT Absensi | (Web App)",
         "description": "Web App BMT Absensi, is an attendance website that used by BMT Company Administrator (to monitoring data employees attendance)",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["react.png", "bootstrap.png"]
@@ -188,7 +188,7 @@
         "logo": "logo-ut.png",
         "name": "SISUSAN | Decision Survey System (Universitas Terbuka)",
         "description": "SISUSAN | Decision Survey System, is an app that used by Universitas Terbuka Purwokerto for making decision survey system",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["react.png", "bootstrap.png"]
@@ -202,7 +202,7 @@
                 "stacks": ["mysql.png"]
             }   
         ],
-        "demo_link": "https://survei-mita.matursoft.com/",
+        "demo_link": null,
         "github_link": null
     },
     {
@@ -210,7 +210,7 @@
         "logo": "kotlin.png",
         "name": "BOTOT",
         "description": "BOTOT | is a trash pickup application with trash buying and selling feature",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Mobile",
                 "stacks": ["kotlin.png"]
@@ -232,7 +232,7 @@
         "logo": "farah-greeting.png",
         "name": "Farah Greeting",
         "description": "An app or game with a birthday theme that I made specifically for a girl I like as a birthday gift",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Mobile",
                 "stacks": ["rn.webp"]
@@ -246,7 +246,7 @@
         "logo": "kitani.png",
         "name": "KITANI (Backend System)",
         "description": "Develop KITANI Backend system for mobile & admin dashboard app. KITANI is an app that used by farmers to plant in a more modern way",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "BE",
                 "stacks": ["laravel.jpg"]
@@ -264,7 +264,7 @@
         "logo": "logo-smk.png",
         "name": "Kelulusan Skansar",
         "description": "School Graduation application that provides information about Student Graduation",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "Mobile",
                 "stacks": ["kotlin.png"]
@@ -286,7 +286,7 @@
         "logo": "sakura.png",
         "name": "Personal Site",
         "description": "My Personal Site :)",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["react.png", "tailwind.svg"]
@@ -300,7 +300,7 @@
         "logo": "atika.svg",
         "name": "Atika Tailwind CSS Admin Dashboard",
         "description": "Free and Open-source Tailwind CSS Dashboard Admin Template",
-        "tect_stacks": [
+        "tech_stacks": [
             {
                 "type": "FE",
                 "stacks": ["astro.png", "tailwind.svg"]

@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import Viewer from "react-viewer";
 import Axios from "../libs/axios";
+import ContentLoader from "react-content-loader";
 
 interface GalleryInterface {
     image: string,
     title: string,
-    year: number | null
+    year: number | null,
+    imageLoaded: boolean
 }
 
 export default function () {
@@ -15,7 +17,8 @@ export default function () {
     const [galleryModal, setGalleryModal] = useState<GalleryInterface>({
         image: '',
         title: '',
-        year: null
+        year: null,
+        imageLoaded: false
     })
 
     useEffect(() => {
@@ -25,7 +28,11 @@ export default function () {
     const loadGalleries = (): void => {
         Axios.get('./data/galleries.json')
             .then((res) => {
-                setGalleries(res.data)
+                setGalleries(res.data.map((e: GalleryInterface) => {
+                    e.imageLoaded = false
+
+                    return e
+                }))
             })
     }
 
@@ -50,10 +57,23 @@ export default function () {
                 {
                     galleries.map((gallery) => (
                         <div className="w-full lg:w-3/12 px-3 py-4">
+                            {
+                                !gallery.imageLoaded ? <ContentLoader viewBox="0 0 380 250">
+                                    <rect x="0" y="0" rx="5" ry="5" width="100%" height="250" />
+                                </ContentLoader> : <></>
+                            }
                             <div className="cursor-pointer" onClick={() => {
                                 openModalViewerImage(gallery)
                             }}>
-                                <img src={`./assets/images/galleries/${gallery.image}`} className="w-full h-40 lg:h-60 object-cover object-center rounded-lg" alt={gallery.title} />
+                                <img src={`./assets/images/galleries/${gallery.image}`} onLoad={() => {
+                                    setGalleries([...galleries].map((e) => {
+                                        if (e == gallery) {
+                                            e.imageLoaded = true
+                                        }
+
+                                        return e
+                                    }))
+                                }} className={`w-full ${gallery.imageLoaded ? 'h-40 lg:h-60' : 'h-0 lg:h-0'} object-cover object-center rounded-lg`} alt={gallery.title} />
                             </div>
                             <div className="flex flex-col">
                                 <span className="font-bold font-inter text-sm lg:text-base mt-2 text-gray-600">{gallery.year}</span>
