@@ -30,5 +30,9 @@
     {
         "name": "Nest JS",
         "logo": "nest.svg"
+    },
+    {
+        "name": "Next JS",
+        "logo": "next-js.svg"
     }
 ]

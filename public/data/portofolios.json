@@ -12,7 +12,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": "https://smkn1rembang-pbg.sch.id/",
         "github_link": null
@@ -30,7 +30,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -48,7 +48,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -94,7 +94,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": "https://sikasep.online",
         "github_link": null
@@ -112,7 +112,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -134,7 +134,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -156,7 +156,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": "https://play.google.com/store/apps/details?id=com.bmt.attendance",
         "github_link": null
@@ -178,7 +178,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": "https://absensi.bmtamanahindonesia.com/",
         "github_link": null
@@ -200,7 +200,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -222,7 +222,7 @@
             {
                 "type": "DB",
                 "stacks": ["mysql.png"]
-            }   
+            }
         ],
         "demo_link": null,
         "github_link": null
@@ -308,5 +308,89 @@
         ],
         "demo_link": "https://atika-dashboard.vercel.app",
         "github_link": "https://github.com/MyFRA/Atika"
+    },
+    {
+        "thumbnail": "ebimko.png",
+        "logo": "ebimko.jpg",
+        "name": "E-Bimko | (Mobile App)",
+        "description": "Mobile App | E-Bimko is an online Guidance and Counseling (BK) service to help students overcome various problems",
+        "tech_stacks": [
+            {
+                "type": "Mobile",
+                "stacks": ["rn.webp"]
+            }
+        ],
+        "demo_link": null,
+        "github_link": null
+    },
+    {
+        "thumbnail": "ebimko-panel.png",
+        "logo": "ebimko.jpg",
+        "name": "E-Bimko Panel & API | (Fullstack)",
+        "description": "Website Panel Management | E-Bimko is an online Guidance and Counseling (BK) service to help students overcome various problems",
+        "tech_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["next-js.svg", "bootstrap.png", "mysql.png", "laravel.jpg"]
+            }
+        ],
+        "demo_link": null,
+        "github_link": null
+    },
+    {
+        "thumbnail": "ebimko-panel.png",
+        "logo": "ebimko.jpg",
+        "name": "E-Bimko Panel & API | (Fullstack)",
+        "description": "Website Panel Management | E-Bimko is an online Guidance and Counseling (BK) service to help students overcome various problems",
+        "tech_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["next-js.svg", "bootstrap.png", "mysql.png", "laravel.jpg"]
+            }
+        ],
+        "demo_link": null,
+        "github_link": null
+    },
+    {
+        "thumbnail": "eigen.png",
+        "logo": "eigen.png",
+        "name": "Eigen",
+        "description": "ECommerce website that sells Herbs Products",
+        "tech_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["next-js.svg", "tailwind.svg", "sass.png"]
+            }
+        ],
+        "demo_link": null,
+        "github_link": null
+    },
+    {
+        "thumbnail": "berkatsoft.png",
+        "logo": "berkatsoft.png",
+        "name": "Berkatsoft",
+        "description": "Berkatsoft Company Profile",
+        "tech_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["next-js.svg", "tailwind.svg", "sass.png"]
+            }
+        ],
+        "demo_link": null,
+        "github_link": null
+    },
+    {
+        "thumbnail": "miegoceng.png",
+        "logo": "miegoceng.png",
+        "name": "Mie Goceng",
+        "description": "Mie Goceng Landing Page Investment Website",
+        "tech_stacks": [
+            {
+                "type": "FE",
+                "stacks": ["next-js.svg", "tailwind.svg", "sass.png"]
+            }
+        ],
+        "demo_link": "https://miegoceng.com",
+        "github_link": null
     }
 ]
