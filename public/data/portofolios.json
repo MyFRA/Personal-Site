@@ -338,20 +338,6 @@
         "github_link": null
     },
     {
-        "thumbnail": "ebimko-panel.png",
-        "logo": "ebimko.jpg",
-        "name": "E-Bimko Panel & API | (Fullstack)",
-        "description": "Website Panel Management | E-Bimko is an online Guidance and Counseling (BK) service to help students overcome various problems",
-        "tech_stacks": [
-            {
-                "type": "FE",
-                "stacks": ["next-js.svg", "bootstrap.png", "mysql.png", "laravel.jpg"]
-            }
-        ],
-        "demo_link": null,
-        "github_link": null
-    },
-    {
         "thumbnail": "eigen.png",
         "logo": "eigen.png",
         "name": "Eigen",
